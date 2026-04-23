@@ -3,11 +3,13 @@ import ServiceCard from "./components/ServiceCard/ServiceCard"
 
 export default function ServiceCardsGroup() {
   return (
-    <Flex w={"100%"} flexDir={"column"} gap={"40px"}>
+    <Flex w={"100%"} flexDir={"column"} gap={"40px"} alignItems={"center"}>
       <Flex
+        w="100%"
         gap={"40px"}
         flexDir={{ base: "column", md: "row" }}
         align={"center"}
+        justify="space-between"
       >
         <ServiceCard
           titleCard="Search engine"
@@ -17,6 +19,7 @@ export default function ServiceCardsGroup() {
           arrowColor="brand.green"
           bgArrow="brand.black"
           learnMoreColor="brand.black"
+          selectedImageCard="search-engine"
         />
         <ServiceCard
           titleCard="Pay-per-click"
@@ -26,12 +29,15 @@ export default function ServiceCardsGroup() {
           bgText="brand.gray"
           bgArrow="brand.black"
           learnMoreColor="brand.black"
+          selectedImageCard="pay-per-click"
         />
       </Flex>
       <Flex
+        w="100%"
         gap={"40px"}
         flexDir={{ base: "column", md: "row" }}
         align={"center"}
+        justify="space-between"
       >
         <ServiceCard
           titleCard="Social media"
@@ -41,6 +47,7 @@ export default function ServiceCardsGroup() {
           bgText="brand.gray"
           bgArrow="brand.gray"
           learnMoreColor="brand.gray"
+          selectedImageCard="social-media"
         />
         <ServiceCard
           titleCard="E-mail"
@@ -50,12 +57,15 @@ export default function ServiceCardsGroup() {
           bgText="brand.green"
           bgArrow="brand.black"
           learnMoreColor="brand.black"
+          selectedImageCard="e-mail"
         />
       </Flex>
       <Flex
+        w="100%"
         gap={"40px"}
         flexDir={{ base: "column", md: "row" }}
         align={"center"}
+        justify="space-between"
       >
         <ServiceCard
           titleCard="Content"
@@ -65,6 +75,7 @@ export default function ServiceCardsGroup() {
           bgText="brand.gray"
           bgArrow="brand.black"
           learnMoreColor="brand.black"
+          selectedImageCard="content"
         />
 
         <ServiceCard
@@ -75,6 +86,7 @@ export default function ServiceCardsGroup() {
           bgText="brand.green"
           bgArrow="brand.gray"
           learnMoreColor="brand.gray"
+          selectedImageCard="analytics"
         />
       </Flex>
     </Flex>

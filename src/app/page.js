@@ -7,14 +7,17 @@ import ServiceSection from "@/components/ServiceSection/ServiceSection"
 
 export default function Home() {
   return (
-    <Flex
-      bgColor={"white"}
-      px={{ base: "20px", md: "100px" }}
-      flexDir={"column"}
-    >
-      <Navbar />
-      <Hero />
-      <ServiceSection />
+    <Flex w="100%" bgColor={"white"} flexDir={"column"} alignItems={"center"}>
+      <Flex
+        w="100%"
+        maxW="1440px"
+        px={{ base: "20px", md: "100px" }}
+        flexDir={"column"}
+      >
+        <Navbar />
+        <Hero />
+        <ServiceSection />
+      </Flex>
     </Flex>
   )
 }

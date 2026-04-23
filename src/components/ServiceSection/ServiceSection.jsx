@@ -1,19 +1,21 @@
 import { Flex, Text } from "@chakra-ui/react"
 import ServiceCardsGroup from "./components/ServiceCardsGroup/ServiceCardsGroup"
+import ServiceIntro from "./components/ServiceIntro/ServiceIntro"
+import ServiceProposal from "./components/ServiceProposal/ServiceProposal"
 
 export default function ServiceSection() {
   return (
     <Flex
-      mt={"140px"}
+      mt={"100px"}
       bgColor="white"
       pb={{ base: "40px", md: "140px" }}
-      justify="space-between"
-      align="center"
       direction={{ base: "column", md: "row" }}
       color="brand.dark"
       flexDir={"column"}
     >
+      <ServiceIntro />
       <ServiceCardsGroup />
+      <ServiceProposal />
     </Flex>
   )
 }

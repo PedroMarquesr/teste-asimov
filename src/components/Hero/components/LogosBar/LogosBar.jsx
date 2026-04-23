@@ -2,7 +2,7 @@ import { Flex, Image } from "@chakra-ui/react"
 
 export default function LogosBar() {
   return (
-    <Flex color="brand.gray" justify={"space-between"} w={"100%"} wrap="wrap">
+    <Flex color="brand.gray" justify={"space-between"} w={"100%"} wrap="wrap" >
       <Image
         src="/images/logos/logo-amazon.svg"
         alt="Amazon"
