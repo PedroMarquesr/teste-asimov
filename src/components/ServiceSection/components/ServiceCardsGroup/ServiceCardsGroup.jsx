@@ -4,7 +4,11 @@ import ServiceCard from "./components/ServiceCard/ServiceCard"
 export default function ServiceCardsGroup() {
   return (
     <Flex w={"100%"} flexDir={"column"} gap={"40px"}>
-      <Flex gap={"40px"}>
+      <Flex
+        gap={"40px"}
+        flexDir={{ base: "column", md: "row" }}
+        align={"center"}
+      >
         <ServiceCard
           titleCard="Search engine"
           subTitleCard="optimization"
@@ -24,7 +28,11 @@ export default function ServiceCardsGroup() {
           learnMoreColor="brand.black"
         />
       </Flex>
-      <Flex gap={"40px"}>
+      <Flex
+        gap={"40px"}
+        flexDir={{ base: "column", md: "row" }}
+        align={"center"}
+      >
         <ServiceCard
           titleCard="Social media"
           subTitleCard="marketing"
@@ -44,7 +52,11 @@ export default function ServiceCardsGroup() {
           learnMoreColor="brand.black"
         />
       </Flex>
-      <Flex gap={"40px"}>
+      <Flex
+        gap={"40px"}
+        flexDir={{ base: "column", md: "row" }}
+        align={"center"}
+      >
         <ServiceCard
           titleCard="Content"
           subTitleCard="marketing"
